@@ -4,10 +4,10 @@
     "ncp-uart-hw": {
         "components": "zigbee_token_interface,zigbee_mfglib",
         "configuration": {
-            "SL_IOSTREAM_USART_VCOM_RX_BUFFER_SIZE":64,
+            "SL_IOSTREAM_USART_VCOM_RX_BUFFER_SIZE":32,
             "EMBER_APS_UNICAST_MESSAGE_COUNT":20,
-            "EMBER_NEIGHBOR_TABLE_SIZE":26,
-            "EMBER_SOURCE_ROUTE_TABLE_SIZE":200
+            "EMBER_NEIGHBOR_TABLE_SIZE":12,
+            "EMBER_SOURCE_ROUTE_TABLE_SIZE":50
         },
         "extra_c_defs": "'-DEMBER_ADDRESS_TABLE_SIZE=16' '-DEMBER_MULTICAST_TABLE_SIZE=16'"
     },
