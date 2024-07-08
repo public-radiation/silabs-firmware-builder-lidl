@@ -1,53 +1,49 @@
-From 675bfdf1bb78893a4c51e7ba0eb71fc52305e474 Mon Sep 17 00:00:00 2001
+From 5b5e2763464e06f83fe6e0bbebe81fb902486119 Mon Sep 17 00:00:00 2001
 From: Tim Lunn <tim@feathertop.org>
-Date: Thu, 28 Dec 2023 18:33:50 +1100
-Subject: [PATCH] config: configure cpc usart vcom A6A5-B1B0
+Date: Fri, 3 Nov 2023 23:58:33 +1100
+Subject: [PATCH] config iostream usart vcom
 
 ---
- config/sl_cpc_drv_uart_usart_vcom_config.h | 30 +++++++++++-----------
- 1 file changed, 15 insertions(+), 15 deletions(-)
+ config/sl_iostream_usart_vcom_config.h | 25 ++++++++-----------------
+ 1 file changed, 8 insertions(+), 17 deletions(-)
 
-diff --git a/config/sl_cpc_drv_uart_usart_vcom_config.h b/config/sl_cpc_drv_uart_usart_vcom_config.h
-index dbce4ed..816402f 100644
---- a/config/sl_cpc_drv_uart_usart_vcom_config.h
-+++ b/config/sl_cpc_drv_uart_usart_vcom_config.h
-@@ -59,21 +59,21 @@
+diff --git a/config/sl_iostream_usart_vcom_config.h b/config/sl_iostream_usart_vcom_config.h
+index bf8e49e..1c8c0b9 100644
+--- a/config/sl_iostream_usart_vcom_config.h
++++ b/config/sl_iostream_usart_vcom_config.h
+@@ -84,25 +84,16 @@
  // <<< sl:start pin_tool >>>
- // <usart signal=TX,RX,(CTS),(RTS)> SL_CPC_DRV_UART_VCOM
- // $[USART_SL_CPC_DRV_UART_VCOM]
--#warning "CPC USART peripheral not configured"
--// #define SL_CPC_DRV_UART_VCOM_PERIPHERAL                 USART0
--// #define SL_CPC_DRV_UART_VCOM_PERIPHERAL_NO              0
--//
--// #define SL_CPC_DRV_UART_VCOM_TX_PORT                    gpioPortD
--// #define SL_CPC_DRV_UART_VCOM_TX_PIN                     13
--//
--// #define SL_CPC_DRV_UART_VCOM_RX_PORT                    gpioPortD
--// #define SL_CPC_DRV_UART_VCOM_RX_PIN                     14
--//
--// #define SL_CPC_DRV_UART_VCOM_CTS_PORT                   gpioPortD
--// #define SL_CPC_DRV_UART_VCOM_CTS_PIN                    13
--//
--// #define SL_CPC_DRV_UART_VCOM_RTS_PORT                   gpioPortD
--// #define SL_CPC_DRV_UART_VCOM_RTS_PIN                    14
-+
-+#define SL_CPC_DRV_UART_VCOM_PERIPHERAL                 USART0
-+#define SL_CPC_DRV_UART_VCOM_PERIPHERAL_NO              0
-+
-+#define SL_CPC_DRV_UART_VCOM_TX_PORT                    gpioPortA
-+#define SL_CPC_DRV_UART_VCOM_TX_PIN                     1
-+
-+#define SL_CPC_DRV_UART_VCOM_RX_PORT                    gpioPortA
-+#define SL_CPC_DRV_UART_VCOM_RX_PIN                     0
-+
-+#define SL_CPC_DRV_UART_VCOM_CTS_PORT                   gpioPortC
-+#define SL_CPC_DRV_UART_VCOM_CTS_PIN                    1
-+
-+#define SL_CPC_DRV_UART_VCOM_RTS_PORT                   gpioPortA
-+#define SL_CPC_DRV_UART_VCOM_RTS_PIN                    4
- // [USART_SL_CPC_DRV_UART_VCOM]$
+ // <usart signal=TX,RX,(CTS),(RTS)> SL_IOSTREAM_USART_VCOM
+ // $[USART_SL_IOSTREAM_USART_VCOM]
+-#warning "IO Stream USART peripheral not configured"
+-// #define SL_IOSTREAM_USART_VCOM_PERIPHERAL      USART0
+-// #define SL_IOSTREAM_USART_VCOM_PERIPHERAL_NO   0
++#define SL_IOSTREAM_USART_VCOM_PERIPHERAL      USART0
++#define SL_IOSTREAM_USART_VCOM_PERIPHERAL_NO   0
+ 
+-// #define SL_IOSTREAM_USART_VCOM_TX_PORT         gpioPortC
+-// #define SL_IOSTREAM_USART_VCOM_TX_PIN          11
+-// #define SL_IOSTREAM_USART_VCOM_TX_LOC          2
++#define SL_IOSTREAM_USART_VCOM_TX_PORT         gpioPortA
++#define SL_IOSTREAM_USART_VCOM_TX_PIN          0
++#define SL_IOSTREAM_USART_VCOM_TX_LOC          0
+ 
+-// #define SL_IOSTREAM_USART_VCOM_RX_PORT         gpioPortC
+-// #define SL_IOSTREAM_USART_VCOM_RX_PIN          10
+-// #define SL_IOSTREAM_USART_VCOM_RX_LOC          2
+-
+-// #define SL_IOSTREAM_USART_VCOM_CTS_PORT        gpioPortA
+-// #define SL_IOSTREAM_USART_VCOM_CTS_PIN         12
+-// #define SL_IOSTREAM_USART_VCOM_CTS_LOC         2
+-
+-// #define SL_IOSTREAM_USART_VCOM_RTS_PORT        gpioPortC
+-// #define SL_IOSTREAM_USART_VCOM_RTS_PIN         8
+-// #define SL_IOSTREAM_USART_VCOM_RTS_LOC         2
++#define SL_IOSTREAM_USART_VCOM_RX_PORT         gpioPortA
++#define SL_IOSTREAM_USART_VCOM_RX_PIN          1
++#define SL_IOSTREAM_USART_VCOM_RX_LOC          0
+ // [USART_SL_IOSTREAM_USART_VCOM]$
  // <<< sl:end pin_tool >>>
  
 -- 
 2.40.1
-
