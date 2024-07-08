@@ -35,12 +35,16 @@ index dbce4ed..816402f 100644
 +#define SL_CPC_DRV_UART_VCOM_PERIPHERAL_NO              0
 +
 +#define SL_CPC_DRV_UART_VCOM_TX_PORT                    gpioPortA
-+#define SL_CPC_DRV_UART_VCOM_TX_PIN                     1
++#define SL_CPC_DRV_UART_VCOM_TX_PIN                     5
 +
 +#define SL_CPC_DRV_UART_VCOM_RX_PORT                    gpioPortA
-+#define SL_CPC_DRV_UART_VCOM_RX_PIN                     0
++#define SL_CPC_DRV_UART_VCOM_RX_PIN                     6
 +
-
++#define SL_CPC_DRV_UART_VCOM_CTS_PORT                   gpioPortC
++#define SL_CPC_DRV_UART_VCOM_CTS_PIN                    1
++
++#define SL_CPC_DRV_UART_VCOM_RTS_PORT                   gpioPortA
++#define SL_CPC_DRV_UART_VCOM_RTS_PIN                    4
  // [USART_SL_CPC_DRV_UART_VCOM]$
  // <<< sl:end pin_tool >>>
  

@@ -1,0 +1,5 @@
+{
+    "name": "kszigbee",
+    "target": "kszigbee",
+    "device": "EFR32MG1B232F256GM32"
+}
