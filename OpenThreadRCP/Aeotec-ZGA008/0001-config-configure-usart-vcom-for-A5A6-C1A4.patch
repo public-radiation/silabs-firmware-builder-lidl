@@ -37,14 +37,14 @@ index 8a2ab70..7292f1a 100644
 -// #define SL_UARTDRV_USART_VCOM_CTS_PORT          gpioPortA
 -// #define SL_UARTDRV_USART_VCOM_CTS_PIN           2
 +// USART0 CTS on PD02
-+#define SL_UARTDRV_USART_VCOM_CTS_PORT           gpioPortC
-+#define SL_UARTDRV_USART_VCOM_CTS_PIN            2
++#define SL_UARTDRV_USART_VCOM_CTS_PORT           gpioPortA
++#define SL_UARTDRV_USART_VCOM_CTS_PIN            5
  
 -// #define SL_UARTDRV_USART_VCOM_RTS_PORT          gpioPortA
 -// #define SL_UARTDRV_USART_VCOM_RTS_PIN           3
 +// USART0 RTS on PC01
 +#define SL_UARTDRV_USART_VCOM_RTS_PORT           gpioPortA
-+#define SL_UARTDRV_USART_VCOM_RTS_PIN            3
++#define SL_UARTDRV_USART_VCOM_RTS_PIN            4
  // [USART_SL_UARTDRV_USART_VCOM]$
  // <<< sl:end pin_tool >>>
  
